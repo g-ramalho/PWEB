@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Arquitetura de Software</title>
+    </head>
+    <body>
+        <section class="content">
+            <h1>1. Introdução e Conceitos Fundamentais</h1>
+            <p>
+                A arquitetura de software é uma das disciplinas mais críticas da
+                engenharia de sistemas modernos. Ela define a estrutura, os
+                componentes, as interações e os princípios que orientam o design
+                e a evolução de um sistema de software. Muito além de
+                simplesmente organizar código, a arquitetura representa as
+                decisões de alto nível que moldam a capacidade de um sistema em
+                atender requisitos funcionais e não funcionais ao longo de seu
+                ciclo de vida.
+            </p>
+            <p>
+                Segundo o Software Engineering Institute (SEI) da Carnegie
+                Mellon University, a arquitetura de software é a "estrutura ou
+                estruturas de um sistema, que inclui elementos de software, as
+                propriedades externamente visíveis desses elementos e as
+                relações entre eles". Esta definição evidencia que arquitetura
+                não é apenas código, mas um conjunto de decisões e seus
+                fundamentos.
+            </p>
+            <h2>1.1 Por Que a Arquitetura Importa</h2>
+            <p>
+                Sistemas de software modernos precisam satisfazer muito mais do
+                que requisitos funcionais. Eles precisam ser escaláveis,
+                seguros, confiáveis, manuteníveis e eficientes — frequentemente
+                ao mesmo tempo. A arquitetura é o principal vetor que viabiliza
+                (ou compromete) estas qualidades.
+            </p>
+            <ul>
+                <li>
+                    <b>Reduz riscos:</b> decisões arquiteturais tomadas cedo têm
+                    impacto desproporcional no custo e na qualidade final do
+                    sistema.
+                </li>
+                <li>
+                    <b>Facilita comunicação:</b> serve como linguagem comum
+                    entre desenvolvedores, arquitetos e stakeholders de negócio.
+                </li>
+                <li>
+                    <b>Permite evolução:</b> um sistema bem arquitetado pode ser
+                    adaptado a novos requisitos sem reescritas completas.
+                </li>
+                <li>
+                    <b>Orienta tradeoffs:</b> a arquitetura explicita as
+                    concessões entre atributos de qualidade conflitantes.
+                </li>
+            </ul>
+            <h2>1.2 Atributos de Qualidade (Quality Attributes)</h2>
+            <p>
+                Atributos de qualidade — também chamados de requisitos não
+                funcionais — são as propriedades que determinam a utilidade real
+                de um sistema. A norma ISO/IEC 25010 classifica os principais
+                atributos e serve como referência para a indústria. Promover um
+                atributo geralmente implica em concessões em outro, tornando a
+                análise de tradeoffs central à prática arquitetural.
+            </p>
+            <table>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Definição</th>
+                    <th>Exemplo de Métrica</th>
+                </tr>
+                <tr>
+                    <td>Desempenho</td>
+                    <td>
+                        Velocidade e eficiência no uso de recursos sob carga
+                        definida
+                    </td>
+                    <td>Tempo de resposta < 200ms para 95% das requisições</td>
+                </tr>
+                <tr>
+                    <td>Escalabilidade</td>
+                    <td>
+                        Capacidade de crescer horizontal ou verticalmente para
+                        suportar mais carga
+                    </td>
+                    <td>
+                        Suporte a 100.000 usuários simultâneos em até 3 segundos
+                    </td>
+                </tr>
+                <tr>
+                    <td>Disponibilidade</td>
+                    <td>
+                        Fração do tempo em que o sistema está operacional e
+                        acessível
+                    </td>
+                    <td>99,99% de uptime (SLA)</td>
+                </tr>
+                <tr>
+                    <td>Segurança</td>
+                    <td>
+                        Resistência a acessos não autorizados enquanto serve
+                        usuários legítimos
+                    </td>
+                    <td>Zero vulnerabilidades OWASP Top 10</td>
+                </tr>
+                <tr>
+                    <td>Manutenibilidade</td>
+                    <td>
+                        Facilidade com que o sistema pode ser modificado,
+                        corrigido ou aprimorado
+                    </td>
+                    <td>Ciclos de deploy < 1 hora</td>
+                </tr>
+                <tr>
+                    <td>Testabilidade</td>
+                    <td>
+                        Facilidade de verificar o comportamento correto do
+                        sistema
+                    </td>
+                    <td>Cobertura de testes > 80%</td>
+                </tr>
+                <tr>
+                    <td>Usabilidade</td>
+                    <td>
+                        Eficiência e satisfação com que usuários alcançam seus
+                        objetivos
+                    </td>
+                    <td>Taxa de conclusão de tarefas > 90%</td>
+                </tr>
+                <tr>
+                    <td>Confiabilidade</td>
+                    <td>
+                        Capacidade de funcionar corretamente ao longo do tempo
+                    </td>
+                    <td>MTBF (tempo médio entre falhas) elevado</td>
+                </tr>
+            </table>
+            <h2>1.3 Tradeoffs Arquiteturais</h2>
+            <p>
+                Um dos princípios centrais da arquitetura de software é que não
+                existe solução perfeita que satisfaça todos os atributos de
+                qualidade simultaneamente. Conforme descrito pela Carnegie
+                Mellon University, aumentar o desempenho via caching, por
+                exemplo, pode dificultar a manutenção ao adicionar complexidade
+                extra.
+            </p>
+            <h3>Exemplo</h3>
+            <p>
+                Um sistema que prioriza desempenho pode usar caching intensivo —
+                mas isso aumenta a complexidade e pode comprometer a
+                consistência dos dados. Já um sistema que prioriza
+                disponibilidade pode replicar dados em múltiplos nós — mas isso
+                eleva custos e introduz desafios de sincronização.
+            </p>
+        </section>
+    </body>
+</html>

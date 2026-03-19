@@ -1,0 +1,29 @@
+body {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.content {
+    padding: 30px 20vw;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px 15px;
+}
+
+th {
+    background-color: royalblue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
