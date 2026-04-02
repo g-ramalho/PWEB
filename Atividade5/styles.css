@@ -1,0 +1,41 @@
+.um-nome-ai-pra-minha-classe {
+    width: 500px;
+    height: 500px;
+    background-color: #23b14d;
+}
+
+@media (max-width: 1920px) {
+    .um-nome-ai-pra-minha-classe {
+        background-color: #f0c231;
+    }
+}
+
+@media (max-width: 1366px) {
+    .um-nome-ai-pra-minha-classe {
+        background-color: #674fa7;
+    }
+}
+
+@media (max-width: 1080px) {
+    .um-nome-ai-pra-minha-classe {
+        background-color: #e06665;
+    }
+}
+
+@media (max-width: 1024px) {
+    .um-nome-ai-pra-minha-classe {
+        background-color: #ff00fe;
+    }
+}
+
+@media (max-width: 768px) {
+    .um-nome-ai-pra-minha-classe {
+        background-color: #e99138;
+    }
+}
+
+@media (max-width: 420px) {
+    .um-nome-ai-pra-minha-classe {
+        background-color: #144f5f;
+    }
+}
