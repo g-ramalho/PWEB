@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jankenpon</title>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <h1>Pedra, papel e tesoura</h1>
+            <form>
+                <label
+                    ><input type="radio" name="choice" value="Pedra" />
+                    Pedra</label
+                >
+                <label
+                    ><input type="radio" name="choice" value="Papel" />
+                    Papel</label
+                >
+                <label
+                    ><input type="radio" name="choice" value="Tesoura" />
+                    Tesoura</label
+                >
+                <button id="play" type="button">Jogar</button>
+            </form>
+            <section id="results">
+                <div id="computer-choice"></div>
+                <div id="winner"></div>
+            </section>
+        </main>
+    </body>
+</html>
